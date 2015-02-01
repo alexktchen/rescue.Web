@@ -5,7 +5,7 @@
 <html lang="en">
 <!--<![endif]-->
 <head>
-    <title>Unify | Welcome...</title>
+    <title>守護台灣-求救自救平台</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -35,30 +35,45 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     <style>
         #map {
-            width: 1200px;
-            height: 600px;
+            width: 100%;
+            height: 500px;
+        }
+
+        .label {
+            font-size: 12px;
+            background: rgba(22,22,22,0.6);
+            color: #fff;
+            padding: .25em;
+        }
+
+        body {
+            font-family: "Helvetica Neue",Helvetica,Arial,"Heiti TC","Apple LiGothic Medium","微軟正黑體",sans-serif !important;
+            font-size: 22px;
+            font-weight: 400;
+            color: black;
+        }
+
+        h2 {
+            font-family: "Helvetica Neue",Helvetica,Arial,"Heiti TC","Apple LiGothic Medium","微軟正黑體",sans-serif !important;
+            font-size: 22px;
+            font-weight: bolder;
         }
     </style>
 </head>
 
 <body>
+
     <div class="wrapper">
-        <!--=== Header ===-->
         <div class="header">
-            <!-- Topbar -->
             <div class="topbar">
                 <div class="container">
-                    <!-- Topbar Navigation -->
                     <ul class="loginbar pull-right">
-                        <li><a href="page_faq.html">關於我們</a></li>
+                        <li><a href="#aboutus">關於我們</a></li>
                         <li class="topbar-devider"></li>
-                        <li><a href="page_login.html">Login</a></li>
+                        <li><a href="page_login.html">登入</a></li>
                     </ul>
-                    <!-- End Topbar Navigation -->
                 </div>
             </div>
-            <!-- End Topbar -->
-            <!-- Navbar -->
             <div class="navbar navbar-default mega-menu" role="navigation">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -68,152 +83,143 @@
                             <span class="fa fa-bars"></span>
                         </button>
                         <a class="navbar-brand" href="index.html">
-                            <img id="logo-header" src="http://placehold.it/200x50" alt="Logo">
+                            <img id="logo-header" src="http://placehold.it/300x100" alt="Logo">
                         </a>
                     </div>
-
-                    <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse navbar-responsive-collapse">
-                    </div><!--/navbar-collapse-->
+
+                    </div>
                 </div>
             </div>
-            <!-- End Navbar -->
         </div>
-        <!--=== End Header ===-->
-
         <div class="purchase">
             <div class="container">
                 <div class="row">
                     <div class="col-md-9 animated fadeInLeft">
-                        <span>自救求救系統平台</span>
-                        <input type="text" class="form-control" placeholder="請輸入地址">
+                        <span>快速查詢鄰近地址</span>
+                        <input type="text" class="form-control" id="txtAddr">
                     </div>
                     <div class="col-md-3 btn-buy animated fadeInRight">
-                        <a href="#" class="btn-u btn-u-dark-blue btn-u-lg"><i class="fa fa-search"></i> 查詢</a>
+                        <a href="#" class="btn-u btn-u-dark-blue btn-u-lg" id="btnSearch"><i class="fa fa-search"></i> 查詢</a>
                     </div>
                 </div>
             </div>
         </div>
 
+
+        <!--=== Slider ===-->
+        <div class="tp-banner-container" style="overflow: visible;">
+            <div id="map"></div>
+        </div>
+        <!--=== End Slider ===-->
+        <!--=== Content Part ===-->
         <div class="container content">
-            <!-- Top Categories -->
-            <div class="headline"><h2>求救地圖</h2></div>
-            <div class="row category margin-bottom-20">
-                <!-- Info Blocks -->
-                <div class="col-md-12">
-                    <div id="map"></div>
-                </div>
-                <!-- End Section-Block -->
-            </div>
-            <!-- End Top Categories -->
-        </div>
-
-        <div class="parallax-counter-v2 parallaxBg1" style="background-position: 50% 55px;">
-            <div class="container">
-                <ul class="row list-row">
-                    <li class="col-md-3 col-sm-6 col-xs-12 md-margin-bottom-30">
-                        <div class="counters rounded">
-                            <span class="counter">18298</span>
-                            <h4>Web Developers</h4>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-sm-6 col-xs-12 md-margin-bottom-30">
-                        <div class="counters rounded">
-                            <span class="counter">24583</span>
-                            <h4>Designers</h4>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-sm-6 col-xs-12 sm-margin-bottom-30">
-                        <div class="counters rounded">
-                            <span class="counter">37904</span>
-                            <h4>Open Contests</h4>
-                        </div>
-                    </li>
-                    <li class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="counters rounded">
-                            <span class="counter">50892</span>
-                            <h4>Happy Customors</h4>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+            <div class="clearfix margin-bottom-30"></div>
 
 
+            <div class="clearfix margin-bottom-40"></div>
 
-
-        <!--=== Footer Version 1 ===-->
-        <div class="footer-v1">
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <!-- About -->
-                        <div class="col-md-3 md-margin-bottom-40">
-                            <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a>
-                            <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
-                            <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>
-                        </div><!--/col-md-3-->
-                        <!-- End About -->
-                        <!-- Latest -->
-                        <div class="col-md-3 md-margin-bottom-40">
-                            <div class="posts">
-                                <div class="headline"><h2>Latest Posts</h2></div>
-                                <ul class="list-unstyled latest-list">
-                                    <li>
-                                        <a href="#">Incredible content</a>
-                                        <small>May 8, 2014</small>
-                                    </li>
-                                    <li>
-                                        <a href="#">Best shoots</a>
-                                        <small>June 23, 2014</small>
-                                    </li>
-                                    <li>
-                                        <a href="#">New Terms and Conditions</a>
-                                        <small>September 15, 2014</small>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div><!--/col-md-3-->
-                        <!-- End Latest -->
-                        <!-- Link List -->
-                        <div class="col-md-3 md-margin-bottom-40">
-                            <div class="headline"><h2>Useful Links</h2></div>
-                            <ul class="list-unstyled link-list">
-                                <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
-                                <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                                <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                                <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
-                                <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
-                            </ul>
-                        </div><!--/col-md-3-->
-                        <!-- End Link List -->
-                        <!-- Address -->
-                        <div class="col-md-3 map-img md-margin-bottom-40">
-                            <div class="headline"><h2>Contact Us</h2></div>
-                            <address class="md-margin-bottom-40">
-                                25, Lorem Lis Street, Orange <br />
-                                California, US <br />
-                                Phone: 800 123 3456 <br />
-                                Fax: 800 123 3456 <br />
-                                Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
-                            </address>
-                        </div><!--/col-md-3-->
-                        <!-- End Address -->
+            <!-- Service Blocks -->
+            <div class="margin-bottom-20"></div>
+            <div class="row margin-bottom-40">
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">
+                        <i class="icon-custom rounded-x icon-bg-dark fa fa-ambulance"></i>
+                        <h2 class="heading-md">等待求救人數</h2>
+                        <p>4</p>
                     </div>
                 </div>
-            </div><!--/footer-->
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">
+                        <i class="icon-custom rounded-x icon-bg-dark fa fa-ambulance"></i>
+                        <h2 class="heading-md">等待求救人數</h2>
+                        <p>4</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="service-block service-block-default">
+                        <i class="icon-custom rounded-x icon-bg-dark fa fa-ambulance"></i>
+                        <h2 class="heading-md">等待求救人數</h2>
+                        <p>4</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Service Blokcs -->
 
+            <div class="shadow-wrapper" id="aboutus">
+                <div class="tag-box tag-box-v1 box-shadow shadow-effect-2">
+                    <h2>KKAwesome</h2>
+                    <p>我們是一群由網路發起的程式愛好者，組成成員有Ken、Kyle、Alex，分別在不同產業服務，擔任程式開發人員，我們有一個共識：如何利用自己的資訊能力，來改善這個社會，我們擁有不同產業的Know-How，希望藉由這次比賽，將我們的想法換作行動，為這個社會盡一份心力，讓台灣越來越好。</p>
+                </div>
+            </div>
+
+            <div class="row margin-bottom-40">
+                <div class="col-md-12 md-margin-bottom-40">
+                    <div class="headline"><h2>作品發想：重大危機</h2></div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img class="img-responsive margin-bottom-20" src="http://placehold.it/360x239" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <p>2014一場高雄氣爆，讓高雄人付出了30人死亡，數百人受傷的慘痛代價，在重建的過程，身為軟體人的我們開始思考著用「資訊能力」是否能改變一些事情，因此我們希望開發一個能「自救」及「求救」的軟體，當面臨危險時，能很快地透過App發出求救訊號，並相關單位與一般民眾能透過平台，了解哪邊需要支援。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-bottom-40">
+                <div class="col-md-12 md-margin-bottom-40">
+                    <div class="headline"><h2>求救迅速：一鍵求救</h2></div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <p>遇到災難時，使用者能快速的啟動App，並按下求救鍵，在有網路的情況下；如網路在離線的情況下利用 Wi-Fi Direct 持續在各行動裝置間傳遞訊息，以找到有對外網路之行動裝置為目的，並將資訊正確的傳送至雲端伺服器，透過後端程式分析，讓救災人員或現場救護人員順利追蹤和找出受災民眾。</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="img-responsive margin-bottom-20" src="http://placehold.it/360x239" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-bottom-40">
+                <div class="col-md-12 md-margin-bottom-40">
+                    <div class="headline"><h2>自救自助：內建自救資料</h2></div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img class="img-responsive margin-bottom-20" src="http://placehold.it/360x239" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <p>手機內建自救資料，會根據所在地回傳相關自救資訊，如鄰近醫院、鄰近安檢所連絡電話…等等，透過政府公開之Open data資料，能在危機發生時，獲得最準確的資訊，解決當前需透過網路搜尋之問題。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-bottom-40">
+                <div class="col-md-12 md-margin-bottom-40">
+                    <div class="headline"><h2>救災平台：民眾力量</h2></div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <p>網路效應傳播之快，災難發生時，透過網路傳播的力量能將傷害降至最低，資訊公開的平台可讓一般民眾加入，去查詢該區域有哪些地方需要支援，對於災難處理單位，即時的能知道民眾所發出的求救訊號，能讓救援的資源的分配更加有效率。</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <img class="img-responsive margin-bottom-20" src="http://placehold.it/360x239" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-v1">
             <div class="copyright">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
                             <p>
-                                2014 &copy; All Rights Reserved.
-                                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                                2015 © All Rights Reserved @守護台灣比賽.
                             </p>
                         </div>
 
-                        <!-- Social Links -->
                         <div class="col-md-6">
                             <ul class="footer-socials list-inline">
                                 <li>
@@ -253,13 +259,15 @@
                                 </li>
                             </ul>
                         </div>
-                        <!-- End Social Links -->
+
                     </div>
                 </div>
             </div><!--/copyright-->
         </div>
         <!--=== End Footer Version 1 ===-->
-    </div><!--/wrapepr-->
+    </div>
+
+
     <!-- JS Global Compulsory -->
     <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
@@ -279,15 +287,35 @@
 
         var map = $('#map');
 
-        addr = [];
-        addr.push({
-            'addr': '松山機場'
-        });
+        //TODO:API
+        markers = [];
+        markers.push({ addr: ['25.037467', '121.564077'], text: '台北市政府', icon: { url: '/Images/marker.png' } });
+        markers.push({ addr: ['25.100295', '121.549494'], text: '國立故宮博物院', icon: { url: '/Images/marker.png' } });
 
         map.tinyMap({
-            'center': '中正紀念堂',
-            'zoom': 12,
-            'marker': addr
+            center: '台北101',
+            zoom: 13,
+            marker: markers,
+            'event': {
+                'idle': function () {
+
+                    // 取得 tinyMap instance
+                    m = map.data('tinyMap');
+
+                    // 取得 markers 及其 infoWindow
+                    var marker = m._markers[0] || {},
+                        infoWindow = marker.infoWindow || {};
+
+                    if ('function' === typeof infoWindow.open) {
+                        // 開啟 infoWindow
+                        infoWindow.open(m.map, marker);
+                    }
+                }
+            }
+        });
+
+        $('#btnSearch').click(function () {
+            $('#map').tinyMap('panto', $('#txtAddr').val());
         });
 
     </script>
