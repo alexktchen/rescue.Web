@@ -1,24 +1,28 @@
- #map {
-            width: 100%;
-            height: 500px;
-        }
+#map {
+    width: 100%;
+    height: 500px;
+}
 
-        .label {
-            font-size: 12px;
-            background: rgba(22,22,22,0.6);
-            color: #fff;
-            padding: .25em;
-        }
+.label {
+    font-size: 12px;
+    background: rgba(22,22,22,0.6);
+    color: #fff;
+    padding: .25em;
+}
 
-        body {
-            font-family: "Helvetica Neue",Helvetica,Arial,"Heiti TC","Apple LiGothic Medium","微軟正黑體",sans-serif !important;
-            font-size: 22px;
-            font-weight: 400;
-            color: black;
-        }
+body {
+    font-family: "kp-w3", "Helvetica Neue", "Helvetica", "Nimbus Sans L", "Arial", "Liberation Sans", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", "SimHei", "WenQuanYi Zen Hei Sharp", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+}
 
-        h2 {
-            font-family: "Helvetica Neue",Helvetica,Arial,"Heiti TC","Apple LiGothic Medium","微軟正黑體",sans-serif !important;
-            font-size: 22px;
-            font-weight: bolder;
-        }
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-family: "kp-w3", "Helvetica Neue", "Helvetica", "Nimbus Sans L", "Arial", "Liberation Sans", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", "SimHei", "WenQuanYi Zen Hei Sharp", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
