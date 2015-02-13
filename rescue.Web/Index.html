@@ -161,7 +161,7 @@
             </div>
             <!-- 作品介紹 -->
             <!-- Demo影片 -->
-            <div class="container" id="aboutus">
+            <div class="container" >
                 <div class="title-v1">
                     <h2>作品Demo</h2>
                 </div>
@@ -269,9 +269,9 @@
                             {
                                 addr: [item.xAddr, item.yAddr],
                                 text: "求救時間:" + isoDateReviver(item.rescueTime).toLocaleString() +
-                                    "<br />圖片連結:" + item.photoUrl +
-                                    "<br />影片連結:" + item.videoUrl +
-                                    "<br />錄音連結:" + item.audioUrl
+                                    "<br /><a target='_blank' href='" + item.photoUrl + "'>圖片連結</a>" +
+                                    "<br /><a target='_blank' href='" + item.videoUrl + "'>影片連結</a>" +
+                                    "<br /><a target='_blank' href='" + item.audioUrl + "'>錄音連結</a>"
                                 ,
                                 icon: { url: '/Images/marker.png' }
                             });
@@ -297,9 +297,8 @@
                         markers.push({
                             addr: [item.xAddr, item.yAddr],
                             text: "單位:" + item.name +
-                                "<br />圖片連結:" + item.photoUrl +
                                 "<br />電話:" + item.tel +
-                                "<br />網站:" + "<a href='" + item.website + "'>" + item.website + "</a>"
+                                "<br />網站:" + "<a target='_blank' href='" + item.website + "'>" + item.website + "</a>"
                             ,
                             icon: { url: '/Images/info.png' }
                         });
