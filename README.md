@@ -18,13 +18,13 @@ This project provide api service for mobile and web.
 
 API Reference
 
-GET rescueapiservice.azurewebsites.net/api/helpInfo
+GET http://rescueapiservice.azurewebsites.net/api/helpInfo
 
-POST rescueapiservice.azurewebsites.net/api/helpInfo
+POST http://rescueapiservice.azurewebsites.net/api/helpInfo
 
-GET rescueapiservice.azurewebsites.net/api/rescueInfo
+GET http://rescueapiservice.azurewebsites.net/api/rescueInfo
 
-POST rescueapiservice.azurewebsites.net/api/rescueInfo
+POST http://rescueapiservice.azurewebsites.net/api/rescueInfo
 
 Contributors
 
